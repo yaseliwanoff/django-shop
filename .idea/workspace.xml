@@ -5,21 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ee4a21b-c2b9-4b00-a566-f729d99789f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/advanced_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced_project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced_project/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced_project/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced_project/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced_project/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/context_processors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/_partials/_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/_partials/_head_imports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/_partials/_messages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/_partials/_navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/category_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/components/product_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/advanced_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/advanced_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advanced_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advanced_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +33,21 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "0047ffff",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;0047ffff&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2jFEOa9L5cK7UIGAvPyhDniwXDO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,8 +56,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "yaroslav",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -53,7 +67,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,7 +113,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720974393634</updated>
-      <workItem from="1720974394679" duration="4470000" />
+      <workItem from="1720974394679" duration="5093000" />
+      <workItem from="1721042512453" duration="3610000" />
     </task>
     <servers />
   </component>
