@@ -6,7 +6,8 @@
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <form action="{% url 'shop:search-products' %}" method="get">
+{#        {% url 'shop:search-products' %}#}
+        <form action="#" method="get">
             <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
             <div class="input-group">
                 <span class="border-success input-group-text bg-success text-white"><i
@@ -17,7 +18,8 @@
         </div>
     </form>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <form action="{% url 'shop:search-products' %}" method="get">
+        {#        {% url 'shop:search-products' %}#}
+            <form action="#" method="get">
             <div class="ms-auto d-none d-lg-block">
                 <div class="input-group">
                     <span class="border-success input-group-text text-white search-button"><i
@@ -78,7 +80,8 @@
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link mx-2 text-uppercase" href="{% url 'cart:cart-view' %}"> <i
+{#                {% url 'cart:cart-view' %}#}
+                    <a class="nav-link mx-2 text-uppercase" href="#"> <i
                             class="fa fa-shopping-cart" aria-hidden="true"> </i> Cart
                         <span id="lblCartCount" class="badge badge-warning ">
 
@@ -96,21 +99,25 @@
                 {% if request.user.is_authenticated %}
 
                 <li class="nav-item">
-                    <a class="nav-link mx-2 text-uppercase" href="{% url 'account:dashboard' %}"><i
+{#                {% url 'account:dashboard' %}#}
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i
                             class="fa-solid fa-circle-user me-1"></i>@{{ user.username }} Account</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link mx-2 text-uppercase" href="{% url 'account:logout' %}"><i
+{#                {% url 'account:logout' %}#}
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i
                             class="fa-solid fa-circle-user me-1"></i> Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link mx-2 text-uppercase" href="{% url 'account:register' %}"><i
+{#                {% url 'account:register' %}#}
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i
                             class="fa-solid fa-circle-user me-1"></i> Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2 text-uppercase" href="{% url 'account:login' %}"><i
+{#                {% url 'account:login' %}#}
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i
                             class="fa-solid fa-circle-user me-1"></i> Login</a>
                 </li>
                 {% endif %}

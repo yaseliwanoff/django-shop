@@ -1,7 +1,11 @@
 venv/
 venv
 .venv
+.xml
+.idea
 .vs
+media/
+.gitignore
 db.sqlite3
 __pycache__
 .env

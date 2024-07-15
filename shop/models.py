@@ -7,7 +7,7 @@ from django.utils.text import slugify
 
 
 def random_slug():
-    return ''.join(random.choices(string.ascii_letters + string.digits) for _ in range(3))
+    return ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(3))
 
 
 class Category(models.Model):
@@ -62,7 +62,7 @@ class Product(models.Model):
         verbose_name_plural = 'Products'
 
 
-class ProductManager():
+class ProductManager(models.Manager):
     def get_queryset(self):
         return super(ProductManager, self).get_queryset().filter(available=True)
 

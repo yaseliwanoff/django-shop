@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from shop.models import Category, ProductProxy, Product
+from .models import ProductProxy, Category, Product, ProductManager
 
 
 def products_view(request):
